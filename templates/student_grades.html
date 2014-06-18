@@ -1,0 +1,15 @@
+<html>
+
+<body>
+
+    <h1>Project Details</h1>
+
+    <p>Best project evah!</p>
+
+    <ul>
+        {% for x in rows %}
+            <li> Project: <a href="/projects?project_title={{ x[0] }}">{{ x[0] }}</a> Grade:{{ x[1] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

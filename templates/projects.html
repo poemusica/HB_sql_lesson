@@ -1,0 +1,13 @@
+<html>
+
+<body>
+
+    <h1>{{project_title}}</h1>
+
+    <ul>
+        {% for x in rows %}
+            <li>Student: <a href="/student?github={{ x[0] }}">{{x[0]}}</a> Grade: {{ x[1] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
